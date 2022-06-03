@@ -1,0 +1,77 @@
+:root {
+  accent-color: #38d6ae;
+  --primary: #38d6ae;
+  --primary-dark: #356e6a;
+  --grey-0: #ffffff;
+  --grey-400: #f8f8f8;
+  --grey-600: #bfbfbf;
+  --grey-800: #576877;
+  --grey-900: #071b32;
+  --text-primary: #263238;
+  --text-black: #000000;
+  --ff-primary: "Nunito Sans", sans-serif;
+  --ff-secondary: "Syne", sans-serif;
+  --header-height: 3.75rem;
+}
+
+@mixin xs {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin lg2 {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin xl2 {
+  @media screen and (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin xl3 {
+  @media screen and (min-width: 2048px) {
+    @content;
+  }
+}
+
+@mixin xl4 {
+  @media screen and (min-width: 3840px) {
+    @content;
+  }
+}
+@mixin xl5 {
+  @media screen and (min-width: 5120px) {
+    @content;
+  }
+}
+
+@mixin outline {
+  * {
+    outline: 1px solid lime;
+  }
+}

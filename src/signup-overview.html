@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" type="text/javascript"
+        crossorigin="anonymous"></script>
+    <!-- amcharts  -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="//cdn.amcharts.com/lib/5/themes/Responsive.js"></script>
+    <!-- <script type="module" src="./js/main.js"></script> -->
+    <script src="./js/drop-down.js"></script>
+    <script src="./js/accordion.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/main.scss">
+    <link rel="stylesheet" href="./css/styles.scss">
+    <link rel="stylesheet" href="./css/old-style.css">
+
+    <link rel="stylesheet" href="./css/signup-overview.styles.scss">
+
+    <title>Tremfya With Me</title>
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header class="header">
+        <div class="brand">
+            <img src="./assets/Sphere-White-Glossy.png" alt="Logo">
+        </div>
+        <div class="right-group">
+            <nav class="navigation">
+                <ul class="navigation-nav">
+                    <li class="navigation-nav--list-item">
+                        Signup <span>></span>
+                    </li>
+                    <li class="navigation-nav--list-item">
+                        Overview
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="logout-btn">
+                <img src="./assets/logout-icon.svg">
+            </div>
+        </div>
+
+    </header>
+
+    <nav class="page-cycle">
+        <a href="./enrollment-drivers.html" class="btn btn-icon">
+            <img src="./assets/chev-up.svg" alt="chev up">
+        </a>
+        <a href="#" class="btn btn-icon">
+            <img src="./assets/chev-down.svg" alt="chev down">
+        </a>
+    </nav>
+
+    <main class="main-container">
+        <div class="left-container">
+            <div class="headline">
+                <h1>Sign-ups</h1>
+                <h1>Overview</h1>
+            </div>
+            <div class="filter-group">
+                <div class="fancy-accordion">
+                    <div class="fancy-accordion--header">
+                        <span class="__title">TIME RANGE</span>
+                        <button class="btn btn-icon">
+                            <svg class="_plus" fill="none" stroke="#fff" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <svg class="_minus" fill="none" stroke="#000" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4">
+                                </path>
+                            </svg>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="fancy-accordion--content">
+                        <div class="__selections">
+
+                        </div>
+                        <ul class="fancy-accordion--list">
+                            <li class="fancy-accordion--list-item">
+                                Option 1
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 2
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 3
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 4
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fancy-accordion">
+                    <div class="fancy-accordion--header">
+                        <span class="__title">REGION</span>
+                        <button class="btn btn-icon">
+                            <svg class="_plus" fill="none" stroke="#fff" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <svg class="_minus" fill="none" stroke="#000" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4">
+                                </path>
+                            </svg>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="fancy-accordion--content">
+                        <ul class="fancy-accordion--list">
+                            <li class="fancy-accordion--list-item">
+                                Option 1
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 2
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 3
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 4
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fancy-accordion">
+                    <div class="fancy-accordion--header">
+                        <span class="__title">SEGMENT</span>
+                        <button class="btn btn-icon">
+                            <svg class="_plus" fill="none" stroke="#fff" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <svg class="_minus" fill="none" stroke="#000" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4">
+                                </path>
+                            </svg>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="fancy-accordion--content">
+                        <ul class="fancy-accordion--list">
+                            <li class="fancy-accordion--list-item">
+                                Option 1
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 2
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 3
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 4
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fancy-accordion">
+                    <div class="fancy-accordion--header">
+                        <span class="__title">CONDITION</span>
+                        <button class="btn btn-icon">
+                            <svg class="_plus" fill="none" stroke="#fff" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <svg class="_minus" fill="none" stroke="#000" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4">
+                                </path>
+                            </svg>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="fancy-accordion--content">
+                        <ul class="fancy-accordion--list">
+                            <li class="fancy-accordion--list-item">
+                                Option 1
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 2
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 3
+                            </li>
+                            <li class="fancy-accordion--list-item">
+                                Option 4
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+
+            <!-- stats  -->
+            <div class="stat-group __visit">
+                <div class="__title">VISITS</div>
+                <div class="__value">19,427</div>
+                <div class="__percent">
+                    <div class="__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18">
+                            <path d="m.75 10.75 7-10 7 10Z" />
+                            <path
+                                d="M0 10.75a.75.75 0 0 1 .136-.43l7-10A.75.75 0 0 1 7.75 0a.75.75 0 0 1 .614.32l7 10a.75.75 0 0 1 .051.776.75.75 0 0 1-.665.4h-14a.75.75 0 0 1-.75-.75Zm7.75-8.692L2.19 10h11.12Z" />
+                        </svg>
+                    </div>
+                    <div class="__text">27%</div>
+                </div>
+            </div>
+
+            <div class="stat-group __completion">
+                <div class="__title">COMPLETION</div>
+                <div class="__value">19,427</div>
+                <div class="__percent">
+                    <div class="__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18">
+                            <path d="m.75 10.75 7-10 7 10Z" />
+                            <path
+                                d="M0 10.75a.75.75 0 0 1 .136-.43l7-10A.75.75 0 0 1 7.75 0a.75.75 0 0 1 .614.32l7 10a.75.75 0 0 1 .051.776.75.75 0 0 1-.665.4h-14a.75.75 0 0 1-.75-.75Zm7.75-8.692L2.19 10h11.12Z" />
+                        </svg>
+                    </div>
+                    <div class="__text">27%</div>
+                </div>
+            </div>
+            <div class="stat-group __initiation">
+                <div class="__title">INITIATION</div>
+                <div class="__value">19,427</div>
+                <div class="__percent">
+                    <div class="__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18">
+                            <path d="m.75 10.75 7-10 7 10Z" />
+                            <path
+                                d="M0 10.75a.75.75 0 0 1 .136-.43l7-10A.75.75 0 0 1 7.75 0a.75.75 0 0 1 .614.32l7 10a.75.75 0 0 1 .051.776.75.75 0 0 1-.665.4h-14a.75.75 0 0 1-.75-.75Zm7.75-8.692L2.19 10h11.12Z" />
+                        </svg>
+                    </div>
+                    <div class="__text">27%</div>
+                </div>
+            </div>
+
+            <div class="loading" id="js-loader">
+                <div class="loader"></div>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="spheres_canvas"></canvas>
+            </div>
+
+            <div class="tab-container">
+                <div class="tab-group">
+                    <div class="__tab __selected">FUNNEL</div>
+                    <div class="__tab">DROP
+                        CONTRIBUTION</div>
+                    <div class="__tab">AQUISITION
+                        COST</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="msg-wrapper">
+                <p class="scroll-msg">Scroll down to see the overall program performance</p>
+                <svg class="down-arrow" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 5V19" stroke="#666D70" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M19.5 12L12.5 19L5.5 12" stroke="#666D70" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </main>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
+
+    <!-- This brings in the ability to load custom 3D objects in the .gltf file format. Blender allows the ability to export to this format out the box -->
+    <script src='https://cdn.jsdelivr.net/gh/mrdoob/Three.js@r128/examples/js/loaders/GLTFLoader.js'></script>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    
+    <script type="module" src="./js/script-new-model.js"></script>
+
+</body>
+
+</html>

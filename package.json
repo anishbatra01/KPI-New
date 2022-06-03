@@ -1,0 +1,23 @@
+{
+  "name": "tremfya",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "posthtml-include": "^1.7.3"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "assets/models"
+    ]
+  }
+}
